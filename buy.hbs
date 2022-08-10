@@ -1,0 +1,103 @@
+<html>
+    <head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    </head>
+    <body >
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark " >
+            <a class="navbar-brand" href="#" style="color:gold"><h4><i>Kowure-CARS</i></h4></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/login" ><B><i>SOLD DETAILS</i></B><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/carbuy" style="color:rgb(62, 246, 6);"><B>BUY</B></a>
+                </li>
+               
+                  <li class="nav-item">
+                    <a class="nav-link" href="/carsell" style="color:rgb(254, 6, 6);"><B>SELL</B></a>
+                  </li>
+        
+              </ul><div style="display:inline-block;margin-right:100px;" >
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+              <ul class="navbar-nav mr-auto">
+              <li >
+                <a  href="/login" >Log in</a>
+              </li></ul></div>
+            </div>
+          </nav>
+
+
+
+        <center><b><h1 style="color:crimson;"><i>YouR DreAm Is FeW StEp AwAy</i></h1></b><hr><hr></center>
+        <table >
+            {{#each data1}}
+                <br>
+            <center><img src="/uplods/images/{{this.car_img}}" alt="no images" width=900px height=350px></center><br>
+              <h5 style="display:inline-block;color:chocolate;">Car ID     :</h5><tr>{{this.cid}}</tr>
+                <h5 style="display:inline-block;color:chocolate;margin-left:1020px;">Car Name     :</h5><tr>{{this.car_name}}</tr><br>
+                <h5 style="display:inline-block;color:chocolate;">Make Year    :</h5><tr>{{this.make_year}}</tr>
+                <h5 style="display:inline-block;color:chocolate;margin-left:1030px;"> Price   :$</h4><tr>{{this.price}}</tr><br>
+                <h5 style="display:inline-block;color:chocolate;">Reg Year :</h5><tr>{{this.reg_year}}</tr>
+                <h5 style="display:inline-block;color:chocolate;margin-left:1050px;">Fuel      :</h4><tr>{{this.fuel}}</tr><br>
+                <h5 style="display:inline-block;color:chocolate;">KM Driven  :</h5><tr>{{this.km_driven}}</tr>
+                <h5 style="display:inline-block;color:chocolate;margin-left:1030px;">Engine   :</h5><tr>{{this.engine}}</tr><br>
+                <h5 style="display:inline-block;color:chocolate;">No Of Owners   :</h5><tr>{{this.no_of_owners}}</tr>
+                <h5 style="display:inline-block;color:chocolate;margin-left:1050px;">RTO  :</h5><tr>{{this.rto}}</tr><br>
+                <h5 style="display:inline-block;color:chocolate;">Insurance  :</h5><tr>{{this.insurance}}</tr>
+                <h5 style="display:inline-block;color:chocolate;margin-left:1000px;">Car Status    :</h5><tr>{{this.status}}</tr><br>
+                <form action="/buy" method="POST">
+                
+               <input type="submit" class="btn btn-primary" value="BUY-ME"></form>
+                <form action="#" method="POST">
+                <input type="submit" class="btn btn-warning" style="margin-left:1100px;" value="AVAILABLE"><br><hr><hr></form>
+            {{/each}}
+        </table>
+
+
+         <h2 style="color:darkcyan;"><i>Connect to the right car dealers</i></h2><hr>
+          <img src="https://www.motoroids.com/wp-content/uploads/2011/04/Maruti-Suzuki-Logo-2019.jpg" class="img-rounded" alt="Cinque Terre" width="300" height="200">
+          <img src="https://static2.3birdsmarketing.com/Clients/3BIRDSMARKETING/2009-current-Audi-logo-emblem.jpg" class="img-rounded" alt="Cinque Terre" width="300" height="180">
+          <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/bmw-emblem-ericamaxine-price.jpg" class="img-rounded" alt="Cinque Terre" width="300" height="180">
+          <img src="https://www.desktopbackground.org/p/2015/06/26/970009_high-quality-mercedes-benz-logo-wallpapers_1649x1278_h.jpg" class="img-rounded" alt="Cinque Terre" width="300" height="180">
+          <img src="http://www.labournet.com/wp-content/uploads/2019/02/Hyundai.png" class="img-rounded" alt="Cinque Terre" width="300" height="180">
+          <img src="https://www.carlogos.org/car-logos/toyota-logo-2019-3700x1200.png" class="img-rounded" alt="Cinque Terre" width="300" height="180">
+          <img src="https://www.carlogos.org/car-logos/ford-logo-2017.png" class="img-rounded" alt="Cinque Terre" width="300" height="180">
+          <img src="https://www.carlogos.org/logo/Volkswagen-emblem-2014-1920x1080.png" class="img-rounded" alt="Cinque Terre" width="300" height="180">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/KIA_logo2.svg/1200px-KIA_logo2.svg.png" class="img-rounded" alt="Cinque Terre" width="300" height="170">
+          <img src="https://seeklogo.com/images/R/renault-logo-18DB8E9AE7-seeklogo.com.png" class="img-rounded" alt="Cinque Terre" width="300" height="180">
+          <img src="https://upload.wikimedia.org/wikipedia/en/b/b4/Jaguar_2012_logo.png" class="img-rounded" alt="Cinque Terre" width="300" height="180">
+          <img src="https://www.carlogos.org/logo/Chevrolet-logo-2013-2560x1440.png" class="img-rounded" alt="Cinque Terre" width="300" height="180">
+          <img src="https://d2t1xqejof9utc.cloudfront.net/screenshots/pics/26cb4863a2d2b8ff6c286391556477a6/large.png" class="img-rounded" alt="Cinque Terre" width="300" height="180">
+          <img src="https://bangladesh.motorhaat.com/wp-content/uploads/2020/12/Tata-Motors-Logo.png" class="img-rounded" alt="Cinque Terre" width="300" height="170">
+          <img src="https://www.carlogos.org/logo/Mahindra-logo-2560x1440.png" class="img-rounded" alt="Cinque Terre" width="300" height="180"><hr>
+          <br>
+          <br>
+          <img src="https://cdn-icons-png.flaticon.com/512/15/15643.png" width="5%" heigth="5%">
+          <p style="display:inline-block"><B>India’s #1<br>
+            Largest Auto portal</B></p>
+            <img src="https://icon-library.com/images/car-cost-dollar-512_42615.png" width="5%" heigth="5%" style="margin-left:120px;">
+          <p style="display:inline-block"><B>Car Sold<br>
+Value for money</B></p>
+<img src="https://cdn0.iconfinder.com/data/icons/shopping-and-commerce-1-12/66/64-512.png" width="5%" heigth="5%" style="margin-left:120px;">
+          <p style="display:inline-block"><B>Offers<br>
+Stay updated pay less</B></p>
+<img src="https://static.thenounproject.com/png/126471-200.png" width="5%" heigth="5%" style="margin-left:120px;">
+          <p style="display:inline-block"><B>Compare<br>
+Decode the right car</B></p><br><br><hr><br><br>
+<div style="display:inline-block;">
+<h3>Contact us</h3><br>
+<h6 style="color:darkgray;"><i>Shashank B P -1nt19is145.shashank@nmit.ac.in<br><br>
+Bharath T P -1nt19is175.bharath@nmit.ac.in<br><br>
+Vishwanath -1nt19is192.vishwanath@nmit.ac.in<br></i></h6></div>
+<img src="https://www.freepnglogos.com/uploads/app-store-logo-png/apple-app-store-travel-awards-globestamp-7.png" width="15%" height="15%" style="margin-left:900px; margin-bottom:90px;">
+          </body>
+</html>

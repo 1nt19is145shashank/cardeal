@@ -1,0 +1,43 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <center><h3 style="color:red;"><i>AVAILABLE CARS</i></h3><hr><hr></center>
+        <form action="/del" method="POST">
+        <table>
+            {{#each data8}}
+                <br>
+
+              <h5 style="display:inline-block;color:chocolate;" name="cid" value="{{this.cid}}">Car ID     :</h5><tr>{{this.cid}}</tr><br>
+                 <h5 style="display:inline-block;color:chocolate;">Buyer Name    :</h5><tr>{{this.buyer_name}}</tr><br>
+                <h5 style="display:inline-block;color:chocolate;"> Phone Number   :</h5><tr>{{this.buyermail}}</tr><br>
+                <h5 style="display:inline-block;color:chocolate;">Email    :</h5><tr>{{this.phno}}</tr><br>
+                <h5 style="display:inline-block;color:chocolate;"> Address  :$</h5><tr>{{this.address}}</tr><br>
+                <h5 style="display:inline-block;color:chocolate;">Address 2 :</h5><tr>{{this.address2}}</tr><br>
+                <h5 style="display:inline-block;color:chocolate;"> City   :</h5><tr>{{this.city}}</tr><br>
+                <h5 style="display:inline-block;color:chocolate;">Zip  :</h5><tr>{{this.pin}}</tr><br>
+                 <h5 style="display:inline-block;color:chocolate;">Mode Of Payment  :</h5><tr>{{this.mop}}</tr><br>
+
+
+
+
+              
+               <!-- <h5 style="display:inline-block;color:chocolate;">Car Name     :</h5><tr>{{this.car_name}}</tr><br>
+                <h5 style="display:inline-block;color:chocolate;">Make Year    :</h5><tr>{{this.make_year}}</tr><br>
+                <h5 style="display:inline-block;color:chocolate;"> Price   :$</h5><tr>{{this.price}}</tr><br>
+                <h5 style="display:inline-block;color:chocolate;">Reg Year :</h5><tr>{{this.reg_year}}</tr><br>
+                <h5 style="display:inline-block;color:chocolate;">Fuel      :</h5><tr>{{this.fuel}}</tr><br>
+                <h5 style="display:inline-block;color:chocolate;">KM Driven  :</h5><tr>{{this.km_driven}}</tr><br>
+                <h5 style="display:inline-block;color:chocolate;">Engine   :</h5><tr>{{this.engine}}</tr><br>
+                <h5 style="display:inline-block;color:chocolate;">No Of Owners   :</h5><tr>{{this.no_of_owners}}</tr><br>
+                <h5 style="display:inline-block;color:chocolate;">RTO  :</h5><tr>{{this.rto}}</tr><br>
+                <h5 style="display:inline-block;color:chocolate;">Insurance  :</h5><tr>{{this.insurance}}</tr><br>
+                <h5 style="display:inline-block;color:chocolate;">Car Status    :</h5><tr>{{this.status}}</tr><br>
+            -->
+                
+                <input type="submit" class="btn btn-warning" style="margin-left:50px;" value="DELETE"><br><hr><hr></form>
+            {{/each}}
+        </table>
+    </body>
+</html>
